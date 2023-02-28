@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Test    </title>
+<style> *{font-size: 16pt;}</style>
+
+<script>
+
+    $(document).ready(function(){
+
+        $('#btnpls').click(function(){
+            let pls1 = parseInt($('#su1').val());
+            let pls2 = parseInt($('#su2').val());
+
+        $('#show_it').text(add1+add2);
+        });
+
+        $('#btnmns').click(function(){
+            let mns1 = parseInt($('#su1').val());
+            let mns2 = parseInt($('#su2').val());
+
+        $('#show_it').text(mns1+mns2);
+        });
+
+        $('#btnmpt').click(function(){
+            let mtp1 = parseInt($('#su1').val());
+            let mtp2 = parseInt($('#su2').val());
+
+        $('#show_it').text(mtp1+mtp2);
+        });
+
+        $('#btndvs').click(function(){
+            let dvs1 = parseInt($('#su1').val());
+            let dvs2 = parseInt($('#su2').val());
+
+        $('#show_it').text(dvs1/dvs2);
+        });
+    });
+    
+</script>
+</head>
+
+<body>
+    
+    <h2> 13_Testcal.html </h2>
+    <form name="myform" id="myform">
+        <div>
+        수1 : <input type="text" name="su1" id="su1" value="" placeholder="숫자를 입력해주세요."> <br>
+        수2 : <input type="text" name="su2" id="su2" value="" placeholder="숫자를 입력해주세요."> 
+              <input type="button" value="더하기" name="btnpls" id="btnpls">
+              <input type="button" value="빼기" name="btnmns" id="btnmns">
+              <input type="button" value="곱하기" name="btnmpt" id="btnmpt">
+              <input type="button" value="몫" name="btnmok" id="btndvs">
+        </div>
+        <hr>
+        <span id="show_it"></span>
+    </form>
+    <!-- A.사칙연산 처리 결과출력
+         B.웹에서 숫자입력하면 문자로 인식함 >> 형변환 함수 이용
+         C.웹에서 숫자 입력하면 문자이지만 숫자처럼 오른쪽 정렬
+         D.1번째 입력란에 공백일때 alert(); span태그를 쓰던 뭘하던 만들어
+    -->>
+</body>
+</html>
+
